@@ -14,8 +14,9 @@ public class Base {
   protected  WebDriver driver;
  @BeforeClass
   public void setBrowser() {
-	 ChromeOptions co = new ChromeOptions();
-	   driver = new ChromeDriver(co);
+	 WebDriverManager.chromedriver().setup();
+
+	   driver = new ChromeDriver();
 	   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	   // change to your target URL
   }
