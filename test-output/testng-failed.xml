@@ -6,15 +6,15 @@
   </listeners>
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="com.new1.TESTONLY">
+      <class name="com.new1.Second">
         <methods>
-          <include name="methodFirst"/>
           <include name="setBrowser"/>
+          <include name="test2"/>
           <include name="afterClass"/>
           <include name="clearCookies"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.new1.TESTONLY -->
+      </class> <!-- com.new1.Second -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

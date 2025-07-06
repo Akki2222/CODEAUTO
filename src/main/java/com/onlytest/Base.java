@@ -5,7 +5,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -24,7 +24,7 @@ public class Base {
  
  @BeforeMethod
  public void beforeMethod() {
-	  driver.get("https://www.hdfcfund.com/");
+	  driver.get("https://dhaninfo.com/");
  }
  
  @AfterMethod

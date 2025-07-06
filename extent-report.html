@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Parallel Test Execution</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 5, 2025 07:39:50 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jul 6, 2025 10:27:24 pm</span></a>
 </li>
 </ul>
 </div>
@@ -85,9 +85,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">methodFirst</p>
+            <p class="name">test2</p>
             <p class="text-sm">
-              <span>7:43:22 pm</span> / <span>00:01:35:182</span>
+              <span>10:28:37 pm</span> / <span>00:00:11:877</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -95,10 +95,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">methodFirst</h5>
-<span class='badge badge-success'>07.05.2025 7:43:22 pm</span>
-<span class='badge badge-danger'>07.05.2025 7:44:57 pm</span>
-<span class='badge badge-default'>00:01:35:182</span>
+<h5 class="test-status text-fail">test2</h5>
+<span class='badge badge-success'>07.06.2025 10:28:37 pm</span>
+<span class='badge badge-danger'>07.06.2025 10:28:49 pm</span>
+<span class='badge badge-default'>00:00:11:877</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -111,18 +111,17 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:44:57 pm</td>
+        <td>10:28:48 pm</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=138.0.7204.92)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Funds']"}
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [560be957a6b5c20c28647cc551394ffb, getElementAttribute {id=f.CCE5E88DBEB5B81BEAD6D76F9BBBB992.d.7ED1D847DA6520C148DCCC7F73BDD813.e.929, name=href}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.92, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\LENOVO~1.DES\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62594}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62594/devtoo..., se:cdpVersion: 138.0.7204.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (560be957a6b5c20c28647cc551394ffb)] -> tag name: a]
-Session ID: 560be957a6b5c20c28647cc551394ffb
+Command: [4ee4b52df109b07f138c317e06d92880, findElement {value=//a[text()='Funds'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\LENOVO~1.DES\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53575/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ee4b52df109b07f138c317e06d92880
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -133,9 +132,11 @@ Session ID: 560be957a6b5c20c28647cc551394ffb
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:149)
-	at com.new1.TESTONLY.methodFirst(TESTONLY.java:26)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.new1.Second.test2(Second.java:13)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -166,9 +167,9 @@ Session ID: 560be957a6b5c20c28647cc551394ffb
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">test2</p>
+            <p class="name">methodFirst</p>
             <p class="text-sm">
-              <span>7:43:22 pm</span> / <span>00:00:52:011</span>
+              <span>10:28:53 pm</span> / <span>00:00:40:704</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -176,10 +177,10 @@ Session ID: 560be957a6b5c20c28647cc551394ffb
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">test2</h5>
-<span class='badge badge-success'>07.05.2025 7:43:22 pm</span>
-<span class='badge badge-danger'>07.05.2025 7:44:14 pm</span>
-<span class='badge badge-default'>00:00:52:011</span>
+<h5 class="test-status text-pass">methodFirst</h5>
+<span class='badge badge-success'>07.06.2025 10:28:53 pm</span>
+<span class='badge badge-danger'>07.06.2025 10:29:34 pm</span>
+<span class='badge badge-default'>00:00:40:704</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -192,7 +193,7 @@ Session ID: 560be957a6b5c20c28647cc551394ffb
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:44:14 pm</td>
+        <td>10:29:34 pm</td>
         <td>
           Test passed
         </td>
@@ -224,12 +225,12 @@ Session ID: 560be957a6b5c20c28647cc551394ffb
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.StaleElementReferenceException</p>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.StaleElementReferenceException</h4>
+<h4>org.openqa.selenium.NoSuchElementException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -243,9 +244,9 @@ Session ID: 560be957a6b5c20c28647cc551394ffb
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>19:43:22 pm</td>
+<td>22:28:37 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>methodFirst</a>
+<a href="#" class="linked" test-id='1' id='1'>test2</a>
 </td>
 </tr>
 </tbody>
@@ -265,13 +266,13 @@ Session ID: 560be957a6b5c20c28647cc551394ffb
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 5, 2025 07:39:50 pm</h3>
+<h3>Jul 6, 2025 10:27:24 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 5, 2025 07:45:12 pm</h3>
+<h3>Jul 6, 2025 10:29:39 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -341,7 +342,7 @@ Session ID: 560be957a6b5c20c28647cc551394ffb
 </div></div>
 <script>
 var timeline = {
-"methodFirst":95.182,"test2":52.011
+"test2":11.877,"methodFirst":40.704
 };
 </script>
 <div class="row">

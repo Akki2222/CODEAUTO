@@ -6,6 +6,10 @@
       <class name="com.new1.TESTONLY">
         <methods>
           <include name="methodFirst"/>
+          <include name="setBrowser"/>
+          <include name="afterClass"/>
+          <include name="clearCookies"/>
+          <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.new1.TESTONLY -->
     </classes>
